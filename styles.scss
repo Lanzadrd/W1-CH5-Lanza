@@ -1,0 +1,12 @@
+@use "reset";
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images__section {
+  display: flex;
+  justify-content: center;
+}
