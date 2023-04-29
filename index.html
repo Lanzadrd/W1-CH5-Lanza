@@ -6,23 +6,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik&display=swap');
+  </style>
   <title>Travellian</title>
 </head>
 
 <body>
   <section class="text-area">
-    <h2>Popular Destinations</h2>
-    <div></div>
-    <p>Most popular destinations around the world, from historical places
-      to natural wonders.</p>
+    <div class="text-area__container">
+      <h2>Popular Destinations</h2>
+      <p>Most popular destinations around the world, from historical places
+        to natural wonders.</p>
+    </div>
   </section>
-  <figure class="images-area">
-    <img src="./images/berlin.png" alt="Berlin monument">
-  </figure>
+
+  <section class="images-area">
+    <figure class="image__container">
+      <img src="./images/berlin.png" alt="Berlin monument">
+    </figure>
+  </section>
+
   <section class="button-area">
-    <button>
-      < </button>
-        <button>></button>
+    <div class="button-area__container">
+      <button class="left-button">&lt;</button>
+      <button class="right-button">&gt;</button>
+    </div>
   </section>
 
 </body>
