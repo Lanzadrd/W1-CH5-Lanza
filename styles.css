@@ -180,11 +180,12 @@ body {
 .home-container .home-container__title {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
   color: white;
   height: 100%;
   gap: 40px;
+  padding-bottom: 40px;
 }
 .home-container .home-container__title h1 {
   font-family: "Playfair Display", serif;
@@ -194,6 +195,45 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 1.125rem;
   font-weight: lighter;
+}
+.home-container main {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.home-container main form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  justify-content: space-around;
+  margin-top: 50px;
+  border-radius: 20px 20px 0px 0px;
+  padding: 0px 10px;
+}
+.home-container main form label {
+  color: #767e86;
+  padding: 15px;
+}
+.home-container main form input {
+  border: none;
+  color: #172432;
+  padding: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+.home-container main button {
+  border: none;
+  background: none;
+  background-color: #ff7757;
+  color: white;
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Playfair Display", serif;
+  font-size: 2.25rem;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 
 .nav__links {
