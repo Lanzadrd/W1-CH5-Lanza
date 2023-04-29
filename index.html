@@ -5,25 +5,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <title>Travellian</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-  <section class="text-area">
-    <h2>Popular Destinations</h2>
-    <div></div>
-    <p>Most popular destinations around the world, from historical places
-      to natural wonders.</p>
-  </section>
-  <figure class="images-area">
-    <img src="./images/berlin.png" alt="Berlin monument">
-  </figure>
-  <section class="button-area">
-    <button>
-      < </button>
-        <button>></button>
-  </section>
+  <div class="home-container">
+    <header>
+      <div class="nav-container">
+        <nav>
+          <img src="./images/Logo 1.svg" alt="Travellian's logo">
+          <div class="nav__links">
+            <a href="#">Home</a>
+            <a href="#">Explore</a>
+            <a href="#">Travel</a>
+            <a href="#">Blog</a>
+            <a href="#">Pricing</a>
+          </div>
+          <figure>
+            <img src="./images/lines-for-menu.png" alt="menu">
+          </figure>
+      </div>
+      </nav>
+      <div class="home-container__title">
+        <h1>Start your unforgettable journey with us.</h1>
+        <h2>The best travel for your journey begins now</h2>
+      </div>
+    </header>
+    <main>
+      <form>
+        <label for="destination">DESTINATION</label>
+        <input type="text" id="destination">
+        <label for="person">PERSON</label>
+        <input type="text" id="person">
+        <label for="checkin">CHECKIN</label>
+        <input type="date" id="checkin">
+
+
+      </form>
+    </main>
+  </div>
 
 </body>
 

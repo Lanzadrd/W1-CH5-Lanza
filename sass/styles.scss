@@ -1,0 +1,72 @@
+@use "reset";
+@use "global";
+
+@function rem($pxValue) {
+  @return #{calc(stripUnit($pxValue) / stripUnit(16))}rem;
+}
+
+@function rem($value) {
+  $remValue: calc($value / 16) + rem;
+  @return $remValue;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images__section {
+  display: flex;
+  justify-content: center;
+}
+
+.home-container {
+  background-image: url("./images/mountains-and-river.jpg");
+  background-size: cover;
+
+  height: 100%;
+  padding: 16px;
+
+  header {
+    height: 40%;
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    figure {
+      max-height: 23px;
+    }
+  }
+
+  .home-container__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    height: 100%;
+    gap: 40px;
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-size: rem(40);
+    }
+    h2 {
+      font-family: "Rubik", sans-serif;
+      font-size: rem(18);
+      font-weight: lighter;
+    }
+  }
+}
+
+.nav__links {
+  opacity: 0%;
+}
