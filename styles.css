@@ -186,17 +186,19 @@ body {
     display: flex;
   }
 }
+.home-container header .nav-container nav img {
+  height: 40px;
+}
 .home-container header .nav-container nav .nav__links {
+  width: 40%;
   display: flex;
   justify-content: space-around;
-  width: 40%;
-  display: inline;
 }
 .home-container header .nav-container nav .nav__links a {
   color: white;
   text-decoration: none;
 }
-.home-container header .nav-container nav .nav__links:hover {
+.home-container header .nav-container nav a:hover {
   border-bottom: 2px solid #ff7757;
 }
 .home-container header .nav-container nav .nav__buttons a {
@@ -209,6 +211,9 @@ body {
 }
 .home-container header .nav-container nav .nav__buttons a:visited {
   color: white;
+}
+.home-container header .nav-container nav .nav__buttons a:hover {
+  background-color: #b9533c;
 }
 .home-container header .nav-container nav .nav__buttons button {
   border: none;
@@ -339,6 +344,9 @@ body {
     align-items: stretch;
     width: 20%;
   }
+}
+.home-container main form button:hover {
+  background-color: #b9533c;
 }
 
 /*# sourceMappingURL=styles.css.map */
