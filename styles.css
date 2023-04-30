@@ -177,29 +177,27 @@ body {
   margin-top: 1rem;
   flex: 1;
 }
-
-.images-area {
+.app-container .images-area {
   display: flex;
   justify-content: center;
   flex: 1;
 }
-.images-area .image__container {
+.app-container .images-area .image__container {
   display: flex;
   align-items: center;
 }
-.images-area .image__container .hide {
+.app-container .images-area .image__container .hide {
   display: none;
 }
-.images-area .image__container img {
+.app-container .images-area .image__container img {
   max-height: 100%;
 }
-
-.button-area {
+.app-container .button-area {
   display: flex;
   flex: 1;
   min-width: 50%;
 }
-.button-area .button-area__container {
+.app-container .button-area .button-area__container {
   display: flex;
   justify-content: space-between;
   max-height: 30%;
@@ -207,19 +205,43 @@ body {
   align-items: center;
   align-self: center;
 }
-.button-area .button-area__container .left-button {
+.app-container .button-area .button-area__container .left-button {
   background-color: rgb(23, 36, 50);
 }
-.button-area .button-area__container .right-button {
+.app-container .button-area .button-area__container .right-button {
   background-color: rgb(253, 119, 87);
 }
-.button-area .button-area__container button {
+.app-container .button-area .button-area__container button {
   height: 5rem;
   width: 5rem;
   font-size: 2rem;
   color: white;
   padding: 1.5rem;
   border-radius: 20%;
+}
+
+.app-container2 {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app-container2 .offer-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.app-container2 .offer-area .offer__card {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app-container2 .offer__description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 768px) {
@@ -254,7 +276,7 @@ body {
     max-width: 100%;
     height: 100%;
   }
-  .button-area {
+  .app-container .button-area {
     grid-area: 1/2/2/3;
     margin-left: 3rem;
     width: 70%;
