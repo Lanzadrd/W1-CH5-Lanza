@@ -23,11 +23,19 @@
             <a href="#">Blog</a>
             <a href="#">Pricing</a>
           </div>
-          <figure>
-            <img src="./images/lines-for-menu.png" alt="menu">
-          </figure>
+
+
+          <div class="nav__buttons">
+            <button>Login</button>
+            <a href="#">Sign up</a>
+
+          </div>
+
+        </nav>
       </div>
-      </nav>
+      <div class="nav__menu">
+        <img src="./images/lines-for-menu.png" alt="menu">
+      </div>
       <div class="home-container__title">
         <h1>Start your unforgettable journey with us.</h1>
         <h2>The best travel for your journey begins now</h2>
@@ -35,16 +43,26 @@
     </header>
     <main>
       <form>
-        <label for="destination">DESTINATION</label>
-        <input type="text" id="destination">
-        <label for="person">PERSON</label>
-        <input type="text" id="person">
-        <label for="checkin">CHECKIN</label>
-        <input type="date" id="checkin">
-        <label for="checkout">CHECKOUT</label>
-        <input type="date" id="checkout">
+        <div class="field">
+          <label for="destination">DESTINATION</label>
+          <input type="text" id="destination">
+        </div>
+
+        <div class="field">
+          <label for="person">PERSON</label>
+          <input type="text" id="person">
+        </div>
+        <div class="field">
+          <label for="checkin">CHECKIN</label>
+          <input type="date" id="checkin">
+        </div>
+        <div class="field">
+          <label for="checkout">CHECKOUT</label>
+          <input type="date" id="checkout">
+        </div>
+        <button><span>Book Now</span> <span>→</span></button>
       </form>
-      <button><span>Book Now</span> <span>→</span></button>
+
     </main>
   </div>
 
