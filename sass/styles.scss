@@ -43,18 +43,19 @@
       margin: 15px;
 
       nav {
-        display: flex;
+        display: none;
         width: 100%;
         justify-content: space-between;
+        height: 50px;
+        @include desktop {
+          display: flex;
+        }
 
         .nav__links {
           display: flex;
           justify-content: space-around;
           width: 40%;
-          display: none;
-          @include desktop {
-            display: flex;
-          }
+          display: inline;
           a {
             color: white;
             text-decoration: none;
@@ -72,10 +73,7 @@
             border-radius: 10px;
             color: white;
             text-decoration: none;
-            display: none;
-            @include desktop {
-              display: inline;
-            }
+            display: inline;
           }
 
           a:visited {
@@ -88,10 +86,7 @@
             color: white;
             font-size: rem(24);
             cursor: pointer;
-            display: none;
-            @include desktop {
-              display: inline;
-            }
+            display: inline;
           }
         }
       }
@@ -99,9 +94,9 @@
 
     .nav__menu {
       display: flex;
-      justify-content: flex-end;
-      max-height: 23px;
+      justify-content: space-between;
       align-content: flex-start;
+      width: 100%;
       @include desktop {
         display: none;
       }

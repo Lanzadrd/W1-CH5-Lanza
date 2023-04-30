@@ -176,20 +176,21 @@ body {
   margin: 15px;
 }
 .home-container header .nav-container nav {
-  display: flex;
+  display: none;
   width: 100%;
   justify-content: space-between;
+  height: 50px;
+}
+@media only screen and (min-width: 1200px) {
+  .home-container header .nav-container nav {
+    display: flex;
+  }
 }
 .home-container header .nav-container nav .nav__links {
   display: flex;
   justify-content: space-around;
   width: 40%;
-  display: none;
-}
-@media only screen and (min-width: 1200px) {
-  .home-container header .nav-container nav .nav__links {
-    display: flex;
-  }
+  display: inline;
 }
 .home-container header .nav-container nav .nav__links a {
   color: white;
@@ -204,12 +205,7 @@ body {
   border-radius: 10px;
   color: white;
   text-decoration: none;
-  display: none;
-}
-@media only screen and (min-width: 1200px) {
-  .home-container header .nav-container nav .nav__buttons a {
-    display: inline;
-  }
+  display: inline;
 }
 .home-container header .nav-container nav .nav__buttons a:visited {
   color: white;
@@ -220,18 +216,13 @@ body {
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
-  display: none;
-}
-@media only screen and (min-width: 1200px) {
-  .home-container header .nav-container nav .nav__buttons button {
-    display: inline;
-  }
+  display: inline;
 }
 .home-container header .nav__menu {
   display: flex;
-  justify-content: flex-end;
-  max-height: 23px;
+  justify-content: space-between;
   align-content: flex-start;
+  width: 100%;
 }
 @media only screen and (min-width: 1200px) {
   .home-container header .nav__menu {
