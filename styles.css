@@ -162,11 +162,6 @@ body {
   height: 100%;
   padding: 16px;
 }
-@media only screen and (min-width: 1200px) {
-  .home-container {
-    padding: 32px;
-  }
-}
 .home-container header {
   height: 40%;
   width: 100%;
