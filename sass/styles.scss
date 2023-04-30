@@ -1,0 +1,221 @@
+@use "reset";
+@use "global";
+@import "responsive";
+
+@function rem($pxValue) {
+  @return #{calc(stripUnit($pxValue) / stripUnit(16))}rem;
+}
+
+@function rem($value) {
+  $remValue: calc($value / 16) + rem;
+  @return $remValue;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images__section {
+  display: flex;
+  justify-content: center;
+}
+
+.home-container {
+  background-image: url("./images/mountains-and-river.jpg");
+  background-size: cover;
+
+  height: 100%;
+  padding: 16px;
+
+  header {
+    height: 40%;
+    width: 100%;
+
+    .nav-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: white;
+      font-size: rem(24);
+      font-family: "Rubik", sans-serif;
+      margin: 15px;
+
+      nav {
+        display: none;
+        width: 100%;
+        justify-content: space-between;
+        height: 50px;
+        @include desktop {
+          display: flex;
+        }
+
+        img {
+          height: 40px;
+        }
+
+        .nav__links {
+          width: 40%;
+          display: flex;
+          justify-content: space-around;
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+
+        a:hover {
+          border-bottom: 2px solid #ff7757;
+        }
+
+        .nav__buttons {
+          a {
+            background-color: #ff7757;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            display: inline;
+          }
+
+          a:visited {
+            color: white;
+          }
+
+          a:hover {
+            background-color: #b9533c;
+          }
+
+          button {
+            border: none;
+            background-color: #ff765700;
+            color: white;
+            font-size: rem(24);
+            cursor: pointer;
+            display: inline;
+          }
+        }
+      }
+    }
+
+    .nav__menu {
+      display: flex;
+      justify-content: space-between;
+      align-content: flex-start;
+      width: 100%;
+      @include desktop {
+        display: none;
+      }
+    }
+
+    .home-container__title {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      color: white;
+      height: 100%;
+      gap: 40px;
+      padding-bottom: 40px;
+
+      h1 {
+        font-family: "Playfair Display", serif;
+        font-size: rem(40);
+        line-height: 53px;
+        @include desktop {
+          font-size: rem(84);
+          font-family: "Playfair Display";
+          line-height: 70px;
+        }
+      }
+      h2 {
+        font-family: "Rubik", sans-serif;
+        font-size: rem(18);
+        font-weight: lighter;
+        @include desktop {
+          font-size: rem(24);
+        }
+      }
+    }
+  }
+
+  main {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+      height: 50%;
+      display: flex;
+      justify-content: center;
+    }
+
+    form {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      justify-content: space-around;
+      margin-top: 50px;
+      border-radius: 20px 20px 20px 20px;
+
+      @include desktop {
+        flex-direction: row;
+        border-radius: 0px 20px 20px 0px;
+        width: 80%;
+        height: 35%;
+        justify-content: space-between;
+      }
+
+      .field {
+        display: flex;
+        flex-direction: column;
+        @include desktop {
+          justify-content: center;
+          padding: 15px;
+        }
+      }
+
+      label {
+        color: #767e86;
+
+        margin: 15px;
+        @include desktop {
+          font-size: rem(16);
+        }
+      }
+      input {
+        border: none;
+        color: #172432;
+
+        padding-bottom: 20px;
+        border-bottom: 1px solid black;
+        margin: 15px;
+      }
+      button {
+        border: none;
+        background: none;
+        background-color: #ff7757;
+        color: white;
+        border-radius: 0px 0px 20px 20px;
+        display: flex;
+        justify-content: space-around;
+        font-family: "Playfair Display", serif;
+        font-size: rem(36);
+        padding-top: 10px;
+        padding-bottom: 15px;
+        width: 100%;
+        @include desktop {
+          border-radius: 0px 20px 20px 0px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: stretch;
+          width: 20%;
+        }
+      }
+      button:hover {
+        background-color: #b9533c;
+      }
+    }
+  }
+}
