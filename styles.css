@@ -444,7 +444,8 @@ body {
   flex: 1;
 }
 .app-container2 .offer-area .offer__card {
-  width: 70%;
+  width: 80%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
