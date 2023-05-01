@@ -452,7 +452,6 @@ body {
 }
 .app-container2 .offer__description {
   display: flex;
-  max-width: 50%;
   align-items: center;
   flex-direction: column;
 }
